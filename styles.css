@@ -1,0 +1,429 @@
+/*ESTILOS GERAIS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    height: 100vh;
+    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+}
+.Interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header{
+    padding: 20px 4%;
+}
+header  > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex{
+    display: flex;
+}
+/*FIM DE ESTILOS GERAIS*/
+
+/*ESTILOS DO CABEAÇÃRIO*/
+header a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-size: 18px;
+    line-height: 50px;
+}
+header nav.Menu-mobile a:hover{
+    transform: scale(1.05);
+}
+header nav ul{
+    list-style-type: none;
+}
+.Navegation ul li{
+    display: inline-block;
+    padding: 0 50px;
+}
+header nav.Menu-mobile ul li{
+    display: inline-block;
+    padding: 0 60px;
+}
+    
+header .logo i{
+    font-size:40px;
+    margin: 0 10px;
+}
+
+header .Navegation{
+    margin-top: -45px;
+    margin-left: 55%;
+
+}
+/* FIM DO ESTILOS DO CABEAÇÃRIO*/
+
+/*ESTILOS DO APRESENTAÇÂO*/
+section.CentroTela{
+    padding: 60px 4%;
+}
+section.CentroTela .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.Aprenseta h1{
+    color: orange;
+    font-size: 100px;
+    line-height: 40px;
+    margin-bottom: 90px;
+}
+
+.Aprenseta h2{
+    font-size: 40px;  
+}
+.Aprenseta img{
+    top: 430px;
+    right: 15%;
+    position: absolute;
+}
+.Aprenseta{
+    margin-top: 90px;
+    opacity: 0;
+    transition: opacity 2s
+}
+/* FIM DO ESTILOS DO APRESENTAÇÂO*/
+
+
+/*ESTILO DO WORK-PROJECT*/
+section.Work-Project{
+    padding: 40px 4%;
+}
+section.Work-Project .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+}
+.Text-Content{
+    margin-left: 300px;
+    opacity: 0;
+    transition: .3s;
+}
+.Text-Content.rolagem{
+    opacity: 1;
+    margin-left: 200px;
+}
+.Descicao-Text{
+    opacity: 0;
+}
+.Descicao-Text.rolagem{
+    opacity: 1;
+}
+.Text-Content h2{
+    font-size: 70px;
+}
+.Text-Content p{
+    color: rgb(123, 124, 126);
+}
+.Descicao-Text p{
+    font-size: 20px;
+}
+.Descicao-Text a{
+    color: black;
+    font-size: 20px;
+    font-weight: 300px;
+    position: absolute;
+    margin-top: 40px;
+    line-height: 100px;
+}
+.Descicao-Text i{
+    color : red;
+    font-size: 25px;
+    line-height: 100px;
+}
+.Imagem-Projeto img{
+    position: absolute;
+    left: 15%;
+    height: 80%;
+    margin-top: 140px;
+    padding: 30px 0;
+}
+
+
+/* FIM DO ESTILO DO WORK-PROJECT*/
+
+/* ESTILO DO WORK-PARTE*/
+section.Work-Parte{
+    padding: 40px 4%;
+    margin-top: 600px;
+}
+section.Work-Parte .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+}
+.Project-Text{
+    padding: 60px 0;
+    margin-left: 200px;
+    opacity: 0;
+    transition: .3s;
+}
+.Project-Text.rolagem{
+    opacity: 1;
+}
+.Project-Text h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.Project-Text p{
+    color: rgb(123, 124, 126);
+    justify-content: center;
+}
+.Text-Project{
+    font-size: 20px;
+    opacity: 0;
+    transition: .4s;
+    margin-left: 40px;
+}
+.Text-Project.rolagem {
+    opacity: 1;
+    margin-left: 0px;
+}
+.Text-Project a{    
+    color: black;
+    font-size: 20px;
+    font-weight: 300px;
+    position: absolute;
+    line-height: 100px;   
+}
+.ImageProject img{  
+    position: absolute;
+    height: 80%;   
+    left: 200px;
+    margin-top: 170px;
+}
+/* FIM DO ESTILO DO WORK-PARTE*/
+
+/* ESTILO DO WORK-ULTIMA*/
+section.Work-Ultima{
+    padding: 40px 4%;
+    margin-top: 600px;
+}
+section.Work-Ultima .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+}
+.Text-Celular{  
+    padding: 60px 0;
+    margin-left: 150px;
+    transition: .4s;  
+    opacity: 0; 
+}
+.Text-Celular.rolagem{
+    opacity: 1;
+    margin-left: 200px;
+}
+.Text-Celular h1{
+margin-bottom: 20px;
+font-size: 40px;
+}
+.Text-Celular p{
+    color: rgb(123, 124, 126);
+    justify-content: center;
+}
+.DescText{
+    font-size: 18px;
+    transition: .4s;
+    margin-left: 0;
+}
+.DescText a{
+    color: black;
+    font-size: 20px;
+    font-weight: 300px;
+    position: absolute;
+    line-height: 100px;
+}  
+.CelularImagem{
+    position: absolute;
+    height: 60%;   
+    left: 200px;
+    opacity: 0;
+    margin-top: 950px;
+    transition: .4s;
+
+}
+.CelularImagem.rolagem{
+    opacity: 1;
+    height: 80%;  
+}
+/* FIM DO ESTILO DO WORK-ULTIMA*/
+
+/*ESTILO DO footerFinal*/
+
+footer.footerFinal{
+    padding: 40px 4%;
+    margin-top: 900px;
+}
+/* FIM DO ESTILO DO footerFinal*/
+
+.Content-Principal{
+    margin-top: 50px;
+}
+.Menu-mobile{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.Menu-mobile.abrindo-menu{
+    width: 70%;  
+}
+.Menu-mobile.abrindo-menu ~ .overflay-menu{
+    display: block;
+}
+
+.Menu-mobile nav ul{
+    text-align: right;  
+}
+.Menu-mobile nav ul li a{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+.Menu-mobile nav ul li a:hover{
+    background-color: pink;
+}
+.Menu-mobile .btn-Fechar{
+    padding: 20px 4%;
+}
+.Menu-mobile .btn-Fechar i{
+    color: #fff;
+    font-size: 30px;
+    padding: 20px 4%;
+}
+.btn-Abrir i{
+    color: black;
+    font-size: 40px;
+}
+.overflay-menu{
+    background-color: rgba(0, 0, 0, 0.425);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+.btn-Abrir{
+    display: none;
+}
+
+
+/*ESTILO DE REPONSIVEL*/
+
+@media screen and (max-width:800px) {
+    .Navegation a{
+        display: none;
+    }
+    .logo h1{
+        font-size: 22px;
+    }
+    .Aprenseta img{
+        display: none;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .LogoShopia img{
+        position:absolute;
+        height: 35%;
+        align-items: center;
+        left: 6%;
+        top: 163px;
+    }
+    .Aprenseta h1{
+        font-size: 50px;
+        margin-top: 120px;
+        margin-bottom: 40px;
+    }
+    .Aprenseta h2{
+        font-size: 20px;
+    }
+    .Text-Content{
+        margin-left: 10px;
+        margin-right: 200px;
+    }
+    .Descicao-Text{
+        margin-top: 10px;
+    }
+    section.Work-Project .flex{
+        gap: 50px;
+    }
+    .Descicao-Text a{
+        font-size: 25px;
+    }
+    .Descicao-Text i{
+        font-size: 30px;
+    }
+    .Imagem-Projeto img{
+        height: 30%;
+        left: 15px;
+        top: 1050px;
+    }
+
+    .Project-Text{
+        padding: 5px;   
+        margin-right: 200px;
+    }
+
+    section.Work-Parte .flex{
+        gap: 50px;
+    }
+    section.Work-Parte{
+        padding: 40px 4%;
+        margin-top: 250px;
+    }
+    .ImageProject img{
+        height: 25%;
+        left: 15px;
+        top: 1950px;
+    }
+
+    section.Work-Ultima .flex{
+        gap: 50px;
+    }
+    section.Work-Ultima{
+        margin-top: 250px;
+    }
+    .Text-Celular{
+        padding: 5px;   
+        margin-right: 200px;
+    }
+    .DescText{
+        margin-left: 20px;
+    }
+    .CelularImagem img{
+        height: 30%;
+        margin-left: -175px;
+        margin-top: 150px;
+    }
+    .btn-Abrir{
+        display: block;
+    }
+
+    
+}
